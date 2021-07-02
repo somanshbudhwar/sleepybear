@@ -1,0 +1,18 @@
+.center {
+    margin: auto;
+    width: 80%;
+    border: 3px solid lightpink;
+    padding: 20px;
+    background-color: pink;
+    font-family: "Helvetica Neue", serif;
+    text-align: center;
+}
+
+.headers {
+    margin: auto;
+    background-color: lightsteelblue;
+    width: 95%;
+    padding: 20px;
+    font-family: "Helvetica Neue", serif;
+    text-align: center;
+}
