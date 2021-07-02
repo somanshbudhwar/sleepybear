@@ -1,11 +1,16 @@
 .center {
     margin: auto;
     width: 80%;
-    border: 3px solid lightpink;
     padding: 20px;
-    background-color: pink;
     font-family: "Helvetica Neue", serif;
-    text-align: center;
+    font-size: large;
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+
 }
 
 .headers {
@@ -15,4 +20,59 @@
     padding: 20px;
     font-family: "Helvetica Neue", serif;
     text-align: center;
+}
+
+.img_center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .center:hover {
+    background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    margin: auto;
+    padding: 0 20px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    text-align: center;
+}
+
+.center:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+button {
+    margin:auto;
+    display:block;
+}
+
+.subs {
+    margin: auto;
+    width: 60%;
+    padding: 20px;
+    font-family: "Helvetica Neue", serif;
+    font-size: large;
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+
 }
