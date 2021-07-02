@@ -3,14 +3,14 @@
     width: 80%;
     padding: 20px;
     font-family: "Helvetica Neue", serif;
-    font-size: 3vw;
+    font-size: 4vw;
     background-color: #eee;
     color: #444;
     cursor: pointer;
     border: none;
     outline: none;
     transition: 0.4s;
-
+    margin-bottom: 10px;
 }
 
 .headers {
@@ -19,8 +19,10 @@
     width: 95%;
     padding: 20px;
     font-family: "Helvetica Neue", serif;
-    font-size: 4vw;
+    font-size: 5vw;
     text-align: center;
+    position: sticky;
+    top: 0;
 }
 
 .img_center {
@@ -78,17 +80,18 @@ button {
 }
 
 .button2 {
-    border-radius: 4px;
     background-color: #eeeeee;
     border: none;
     color: #444444;
     text-align: center;
-    font-size: 3vw;
+    font-size: 4vw;
+    border-radius: 25px;
     padding: 15px;
     width: 60%;
     transition: all 0.5s;
     cursor: pointer;
     margin: auto;
+    margin-bottom: 10px;
 }
 
 .button2 span {
@@ -117,17 +120,18 @@ button {
 }
 
 .button3 {
-    border-radius: 4px;
     background-color: #cccccc;
     border: none;
     color: #444444;
+    border-radius: 25px;
     text-align: center;
-    font-size: 3vw;
+    font-size: 4vw;
     padding: 15px;
     width: 60%;
     transition: all 0.5s;
     cursor: pointer;
     margin: auto;
+    margin-bottom:10px;
 }
 
 .button3 span {
@@ -153,4 +157,8 @@ button {
 .button3:hover span:after {
     opacity: 1;
     right: 0;
+}
+li{
+    margin-top: 10px;
+    border:1px solid grey;
 }
