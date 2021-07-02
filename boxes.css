@@ -37,7 +37,7 @@
 /* Style the accordion panel. Note: hidden by default */
 .panel {
     margin: auto;
-    padding: 0 20px;
+    padding: 5px 20px;
     background-color: white;
     max-height: 0;
     overflow: hidden;
@@ -65,14 +65,91 @@ button {
 .subs {
     margin: auto;
     width: 60%;
-    padding: 20px;
+    padding: 40px;
     font-family: "Helvetica Neue", serif;
-    font-size: large;
+    font-size: larger;
     background-color: #eee;
     color: #444;
     cursor: pointer;
     border: none;
     outline: none;
     transition: 0.4s;
+}
 
+.button2 {
+    border-radius: 4px;
+    background-color: #eeeeee;
+    border: none;
+    color: #444444;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 60%;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: auto;
+}
+
+.button2 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button2 span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button2:hover span {
+    padding-right: 25px;
+}
+
+.button2:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.button3 {
+    border-radius: 4px;
+    background-color: #cccccc;
+    border: none;
+    color: #444444;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 60%;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: auto;
+}
+
+.button3 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button3 span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button3:hover span {
+    padding-right: 25px;
+}
+
+.button3:hover span:after {
+    opacity: 1;
+    right: 0;
 }
