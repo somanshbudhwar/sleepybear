@@ -1,3 +1,110 @@
+/*Balloon hex = #ffc5d1 */
+/*Bear color = #fef9f1 */
+/*Shirt color = #db1709 */
+
+nav {
+    margin:auto;
+    position: relative;
+    width: 80%;
+    height: 50px;
+    /*background-color: #34495e;*/
+    background-color: #444444;
+    border-radius: 8px;
+    font-size: 0;
+}
+nav a {
+    line-height: 50px;
+    height: 100%;
+    font-size: 1vw;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+nav .animation {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    transition: all .5s ease 0s;
+    border-radius: 8px;
+}
+a:nth-child(1) {
+    width: 20%;
+}
+a:nth-child(2) {
+    width: 20%;
+}
+a:nth-child(3) {
+    width: 20%;
+}
+a:nth-child(4) {
+    width: 20%;
+}
+a:nth-child(5) {
+    width: 20%;
+}
+nav .start-home, a:nth-child(1):hover~.animation {
+    width: 20%;
+    left: 0;
+    background-color: #3498db;
+}
+nav .start-about, a:nth-child(2):hover~.animation {
+    width: 20%;
+    left: 20%;
+    background-color: #e74c3c;
+}
+nav .start-blog, a:nth-child(3):hover~.animation {
+    width: 20%;
+    left: 40%;
+    background-color: #1abc9c;
+}
+nav .start-portefolio, a:nth-child(4):hover~.animation {
+    width: 20%;
+    left: 60%;
+    background-color: #9b59b6;
+}
+nav .start-contact, a:nth-child(5):hover~.animation {
+    width: 20%;
+    left: 80%;
+    background-color: #db1709;
+}
+
+/*body {*/
+/*    font-size: 12px;*/
+/*    font-family: sans-serif;*/
+/*    background: #2c3e50;*/
+/*}*/
+/*h1 {*/
+/*    text-align: center;*/
+/*    margin: 40px 0 40px;*/
+/*    text-align: center;*/
+/*    font-size: 30px;*/
+/*    color: #ecf0f1;*/
+/*    text-shadow: 2px 2px 4px #000000;*/
+/*    font-family: 'Cherry Swash', cursive;*/
+/*}*/
+
+/*p {*/
+/*    position: absolute;*/
+/*    bottom: 20px;*/
+/*    width: 100%;*/
+/*    text-align: center;*/
+/*    color: #ecf0f1;*/
+/*    font-family: 'Cherry Swash',cursive;*/
+/*    font-size: 16px;*/
+/*}*/
+
+span {
+    /*color: #2BD6B4;*/
+    color: #777777;
+}
+
+/*Hreeeeee*/
 .center {
     margin: auto;
     width: 80%;
@@ -15,14 +122,18 @@
 
 .headers {
     margin: auto;
-    background-color: lightsteelblue;
+    /*background-image: linear-gradient(to bottom right, rgba(0,0,0,1), rgba(0,0,255,1));*/
+    background: #777777;
+    /*backdrop-filter: saturate(180%) blur(20px);*/
+    /*opacity: 0.4;*/
+    color: #cccccc;
     width: 95%;
     padding: 20px;
     font-family: "Helvetica Neue", serif;
     font-size: 5vw;
     text-align: center;
-    position: sticky;
-    top: 0;
+    position: -webkit-sticky;
+    border-radius: 25px;
 }
 
 .img_center {
@@ -44,6 +155,18 @@
     background-color: white;
     max-height: 0;
     overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    text-align: center;
+}
+
+.answer_panel {
+    margin: auto;
+    padding: 20px;
+    width: 80%;
+    background-color: #fef9f1;
+    border: 2px solid #777777;
+    border-radius: 20px;
+    max-height: 0;
     transition: max-height 0.2s ease-out;
     text-align: center;
 }
@@ -111,7 +234,7 @@ button {
 }
 
 .button2:hover span {
-    padding-right: 25px;
+    padding-right: 50px;
 }
 
 .button2:hover span:after {
@@ -151,7 +274,7 @@ button {
 }
 
 .button3:hover span {
-    padding-right: 25px;
+    padding-right: 50px;
 }
 
 .button3:hover span:after {
@@ -161,4 +284,10 @@ button {
 li{
     margin-top: 10px;
     border:1px solid grey;
+}
+
+.header_buttons {
+    float: left;
+    margin-left: 2px;
+    height: 20px;
 }
