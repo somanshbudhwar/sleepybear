@@ -15,7 +15,7 @@ nav {
 nav a {
     line-height: 50px;
     height: 100%;
-    font-size: 1vw;
+    font-size: 2vw;
     display: inline-block;
     position: relative;
     z-index: 1;
