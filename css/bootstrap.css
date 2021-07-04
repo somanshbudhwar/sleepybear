@@ -405,7 +405,6 @@ legend + * {
   clear: left;
 }
 
-/*noinspection ALL*/
 ::-webkit-datetime-edit-fields-wrapper,
 ::-webkit-datetime-edit-text,
 ::-webkit-datetime-edit-minute,
