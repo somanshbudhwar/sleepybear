@@ -807,7 +807,7 @@ div#loading img {
     z-index: 99;
     pointer-events: visible;
     border-radius: 0px 0px 15px 15px;
-    border-top: 3px solid #1787FC;
+    border-top: 3px solid #;
   }
 }
 
@@ -1223,7 +1223,7 @@ li.sub-menu--item.nav-item-has-children i {
 }
 
 .btn--link {
-  color: #1787FC;
+  color: #1787FC  ;
   font-size: 13px;
   text-transform: uppercase;
   font-weight: 700;
